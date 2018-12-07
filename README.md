@@ -1,2 +1,2 @@
-# Azure-Functions-Samples
-Azure functions samples
+# Azure Functions Samples
+Useful Azure functions samples
