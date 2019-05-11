@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace AzureFunctionsLabs.Twilio
 {
-    public static class Function1
+    public static class TwilioFunctions
     {
         [FunctionName("Function1")]
         public static async Task<IActionResult> Run(
