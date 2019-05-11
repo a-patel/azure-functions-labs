@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace AzureFunctionsLabs.SendGrid
 {
-    public static class Function1
+    public static class SendGridFunctions
     {
         [FunctionName("Function1")]
         public static async Task<IActionResult> Run(
