@@ -1,15 +1,27 @@
+#region Imports
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging; 
+#endregion
 
 namespace AzureFunctionsLabs.ServiceBusTopicTrigger
 {
-    public static class Function1
+    public static class ServiceBusTopicFunctions
     {
-        [FunctionName("Function1")]
+        [FunctionName("ServiceBusTopicTrigger")]
         public static void Run([ServiceBusTrigger("mytopic", "mysubscription", Connection = "ServiceBusConnectionString")]string mySbMsg, ILogger log)
         {
             log.LogInformation($"C# ServiceBus topic trigger function processed message: {mySbMsg}");
         }
     }
 }
+
+
+
+#region @@Reference
+/*
+
+ 
+*/
+#endregion
+
