@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace AzureFunctionsLabs.TableStorage
 {
-    public static class Function1
+    public static class TableStorageFunctions
     {
         [FunctionName("Function1")]
         public static async Task<IActionResult> Run(
