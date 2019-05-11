@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.TableSto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.TimerTrigger", "AzureFunctionsLabs.TimerTrigger\AzureFunctionsLabs.TimerTrigger.csproj", "{4D0D1D58-82E5-44B3-BF07-500CB098CA77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.Twilio", "AzureFunctionsLabs.Twilio\AzureFunctionsLabs.Twilio.csproj", "{B8EE2793-05E1-4760-B297-A78AFE015F3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{4D0D1D58-82E5-44B3-BF07-500CB098CA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D0D1D58-82E5-44B3-BF07-500CB098CA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D0D1D58-82E5-44B3-BF07-500CB098CA77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8EE2793-05E1-4760-B297-A78AFE015F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8EE2793-05E1-4760-B297-A78AFE015F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8EE2793-05E1-4760-B297-A78AFE015F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8EE2793-05E1-4760-B297-A78AFE015F3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
