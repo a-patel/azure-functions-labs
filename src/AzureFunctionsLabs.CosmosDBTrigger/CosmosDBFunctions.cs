@@ -1,14 +1,16 @@
+#region Imports
 using System.Collections.Generic;
 using Microsoft.Azure.Documents;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging; 
+#endregion
 
 namespace AzureFunctionsLabs.CosmosDBTrigger
 {
-    public static class Function1
+    public static class CosmosDBFunctions
     {
-        [FunctionName("Function1")]
+        [FunctionName("CosmosDBTrigger")]
         public static void Run([CosmosDBTrigger(
             databaseName: "databaseName",
             collectionName: "collectionName",
@@ -23,3 +25,13 @@ namespace AzureFunctionsLabs.CosmosDBTrigger
         }
     }
 }
+
+
+
+#region @@Reference
+/*
+
+ 
+*/
+#endregion
+
