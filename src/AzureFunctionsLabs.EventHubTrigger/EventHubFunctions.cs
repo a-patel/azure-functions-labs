@@ -1,3 +1,4 @@
+#region Imports
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -5,13 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Azure.EventHubs;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging; 
+#endregion
 
 namespace AzureFunctionsLabs.EventHubTrigger
 {
-    public static class Function1
+    public static class EventHubFunctions
     {
-        [FunctionName("Function1")]
+        [FunctionName("EventHubTrigger")]
         public static async Task Run([EventHubTrigger("samples-workitems", Connection = "EventHubConnectionString")] EventData[] events, ILogger log)
         {
             var exceptions = new List<Exception>();
@@ -44,3 +46,13 @@ namespace AzureFunctionsLabs.EventHubTrigger
         }
     }
 }
+
+
+
+#region @@Reference
+/*
+
+ 
+*/
+#endregion
+
