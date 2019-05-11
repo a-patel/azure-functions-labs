@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.HTTPTrig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.IoTHubTrigger", "AzureFunctionsLabs.IoTHubTrigger\AzureFunctionsLabs.IoTHubTrigger.csproj", "{62685D20-223A-4738-ADC1-4EDB6F7B5FA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.NotificationHubs", "AzureFunctionsLabs.NotificationHubs\AzureFunctionsLabs.NotificationHubs.csproj", "{2BFF3C66-4632-4F26-859A-1C77EF0CFC5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{62685D20-223A-4738-ADC1-4EDB6F7B5FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62685D20-223A-4738-ADC1-4EDB6F7B5FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62685D20-223A-4738-ADC1-4EDB6F7B5FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFF3C66-4632-4F26-859A-1C77EF0CFC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFF3C66-4632-4F26-859A-1C77EF0CFC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFF3C66-4632-4F26-859A-1C77EF0CFC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFF3C66-4632-4F26-859A-1C77EF0CFC5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
