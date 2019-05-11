@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace AzureFunctionsLabs.SignalR
 {
-    public static class Function1
+    public static class SignalRFunctions
     {
         [FunctionName("Function1")]
         public static async Task<IActionResult> Run(
