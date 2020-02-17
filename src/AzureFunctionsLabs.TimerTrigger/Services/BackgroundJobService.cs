@@ -31,8 +31,6 @@ namespace AzureFunctionsLabs.TimerTrigger.Services
         {
             try
             {
-                _logger.LogInformation($"Deleted logs executed at: {DateTime.Now}");
-
                 await using (var connection = new SqlConnection(_connectionString))
                 {
                     connection.Open();
@@ -44,8 +42,6 @@ namespace AzureFunctionsLabs.TimerTrigger.Services
 
                     _logger.LogInformation($"Total deleted logs: {result}");
                 }
-
-                _logger.LogInformation($"Function execution finished at: {DateTime.Now}");
             }
             catch (Exception ex)
             {

@@ -12,10 +12,10 @@ namespace AzureFunctionsLabs.TimerTrigger
     {
         #region Members
 
+        private readonly IBackgroundJobService _backgroundJobService;
+
         // {second=0} {minute=15} {hour=10} {day} {month} {day-of-week=(2=Tuesday)}
         private const string RemoveLogsSchedule = "0 15 10 * * 2";
-
-        private readonly IBackgroundJobService _backgroundJobService;
 
         #endregion
 
@@ -39,7 +39,11 @@ namespace AzureFunctionsLabs.TimerTrigger
         [FunctionName("RemoveLogs")]
         public async Task RemoveLogs([TimerTrigger(RemoveLogsSchedule)]TimerInfo myTimer, ILogger log)
         {
+            log.LogInformation($"Deleted logs executed at: {DateTime.Now}");
+
             await _backgroundJobService.RemoveLogs();
+
+            log.LogInformation($"Deleted logs execution finished at: {DateTime.Now}");
         }
 
         #endregion
