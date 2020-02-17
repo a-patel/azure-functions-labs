@@ -7,7 +7,7 @@ using System.Text;
 using System.Net.Http;
 using Microsoft.Extensions.Logging;
 
-namespace AzureFunctionsLabs.IoTHubTrigger
+namespace AzureFunctionsLabs.IoTHubTriggerDemo
 {
     public static class Function1
     {
