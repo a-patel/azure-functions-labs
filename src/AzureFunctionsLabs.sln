@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.QueueTri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.ServiceBusQueueTrigger", "AzureFunctionsLabs.ServiceBusQueueTrigger\AzureFunctionsLabs.ServiceBusQueueTrigger.csproj", "{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.ServiceBusTopicTrigger", "AzureFunctionsLabs.ServiceBusTopicTrigger\AzureFunctionsLabs.ServiceBusTopicTrigger.csproj", "{820F39FD-9FA9-43D5-90F1-EEFDC34E5B58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820F39FD-9FA9-43D5-90F1-EEFDC34E5B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820F39FD-9FA9-43D5-90F1-EEFDC34E5B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820F39FD-9FA9-43D5-90F1-EEFDC34E5B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820F39FD-9FA9-43D5-90F1-EEFDC34E5B58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
