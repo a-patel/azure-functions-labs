@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.IoTHubTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.QueueTrigger", "AzureFunctionsLabs.QueueTrigger\AzureFunctionsLabs.QueueTrigger.csproj", "{EDD5A27C-EAA4-4543-82DC-CAE4853ABCBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.ServiceBusQueueTrigger", "AzureFunctionsLabs.ServiceBusQueueTrigger\AzureFunctionsLabs.ServiceBusQueueTrigger.csproj", "{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{EDD5A27C-EAA4-4543-82DC-CAE4853ABCBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDD5A27C-EAA4-4543-82DC-CAE4853ABCBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDD5A27C-EAA4-4543-82DC-CAE4853ABCBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
