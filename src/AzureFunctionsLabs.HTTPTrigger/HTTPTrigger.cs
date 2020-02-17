@@ -1,18 +1,37 @@
-using System;
-using System.IO;
-using System.Threading.Tasks;
+#region Imports
+using AzureFunctionsLabs.HTTPTrigger.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System.IO;
+using System.Threading.Tasks;
+#endregion
 
 namespace AzureFunctionsLabs.HTTPTrigger
 {
-    public static class Function1
+    public class HTTPTrigger
     {
-        [FunctionName("Function1")]
+        #region Members
+
+        private readonly IWebhookService _webhookService;
+
+        #endregion
+
+        #region Ctor
+
+        public HTTPTrigger(IWebhookService webhookService)
+        {
+            _webhookService = webhookService;
+        }
+
+        #endregion
+
+        #region Functions
+
+        [FunctionName("HTTPTrigger")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
@@ -29,5 +48,20 @@ namespace AzureFunctionsLabs.HTTPTrigger
                 ? (ActionResult)new OkObjectResult($"Hello, {name}")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
         }
+
+        #endregion
+
+        #region Utilities
+
+        #endregion
     }
 }
+
+
+
+#region @@Reference
+/*
+
+ 
+*/
+#endregion
