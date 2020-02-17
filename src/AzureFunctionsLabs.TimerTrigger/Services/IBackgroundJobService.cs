@@ -1,12 +1,11 @@
 ﻿#region Imports
-using System;
-using System.Collections.Generic;
-using System.Text; 
+using System.Threading.Tasks;
 #endregion
 
 namespace AzureFunctionsLabs.TimerTrigger.Services
 {
     public interface IBackgroundJobService
     {
+        Task RemoveLogs();
     }
 }
