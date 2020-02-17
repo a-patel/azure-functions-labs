@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.CosmosDB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.EventHubTrigger", "AzureFunctionsLabs.EventHubTrigger\AzureFunctionsLabs.EventHubTrigger.csproj", "{6C66FD7C-B1D5-4A1A-8131-9ADDCB63CCED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.EventGridTrigger", "AzureFunctionsLabs.EventGridTrigger\AzureFunctionsLabs.EventGridTrigger.csproj", "{4A985F83-FC88-413B-8B06-60BF4B10CA17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6C66FD7C-B1D5-4A1A-8131-9ADDCB63CCED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C66FD7C-B1D5-4A1A-8131-9ADDCB63CCED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C66FD7C-B1D5-4A1A-8131-9ADDCB63CCED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A985F83-FC88-413B-8B06-60BF4B10CA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A985F83-FC88-413B-8B06-60BF4B10CA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A985F83-FC88-413B-8B06-60BF4B10CA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A985F83-FC88-413B-8B06-60BF4B10CA17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
