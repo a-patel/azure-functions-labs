@@ -15,13 +15,3 @@ namespace AzureFunctionsLabs.BlobTrigger
         }
     }
 }
-
-
-
-#region @@Reference
-/*
-https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection
-https://gunnarpeipman.com/azure-functions-dependency-injection/
- 
-*/
-#endregion

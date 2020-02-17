@@ -53,6 +53,7 @@ namespace AzureFunctionsLabs.BlobTrigger
 
             log.LogInformation($"C# Blob trigger function Processed blob\n Name:{image} \n Size: {image.Length} Bytes");
         }
+
         #endregion
 
         #region Utilities
