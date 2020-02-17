@@ -11,7 +11,10 @@ namespace AzureFunctionsLabs.TimerTrigger
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder.Services.AddScoped<IBackgroundJobService, BackgroundJobService>();
+            builder.Services.AddHttpClient();
+
+            builder.Services.AddSingleton<IBackgroundJobService, BackgroundJobService>();
+            builder.Services.AddScoped<IWebhookService, WebhookService>();
         }
     }
 }

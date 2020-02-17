@@ -13,17 +13,20 @@ namespace AzureFunctionsLabs.TimerTrigger
         #region Members
 
         private readonly IBackgroundJobService _backgroundJobService;
+        private readonly IWebhookService _webhookService;
 
         // {second=0} {minute=15} {hour=10} {day} {month} {day-of-week=(2=Tuesday)}
-        private const string RemoveLogsSchedule = "0 15 10 * * 2";
+        private const string REMOVELOGS_SCHEDULE = "0 15 10 * * 2";
+        private const string WEBHOOK_SCHEDULE = "0 */5 * * * *";
 
         #endregion
 
         #region Ctor
 
-        public TimerFunctions(IBackgroundJobService backgroundJobService)
+        public TimerFunctions(IBackgroundJobService backgroundJobService, IWebhookService webhookService)
         {
             _backgroundJobService = backgroundJobService;
+            _webhookService = webhookService;
         }
 
         #endregion
@@ -36,14 +39,26 @@ namespace AzureFunctionsLabs.TimerTrigger
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
         }
 
+
         [FunctionName("RemoveLogs")]
-        public async Task RemoveLogs([TimerTrigger(RemoveLogsSchedule)]TimerInfo myTimer, ILogger log)
+        public async Task RemoveLogs([TimerTrigger(REMOVELOGS_SCHEDULE)]TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"Deleted logs executed at: {DateTime.Now}");
 
             await _backgroundJobService.RemoveLogs();
 
             log.LogInformation($"Deleted logs execution finished at: {DateTime.Now}");
+        }
+
+
+        [FunctionName("CallWebhook")]
+        public async Task CallWebhook([TimerTrigger(WEBHOOK_SCHEDULE)]TimerInfo myTimer, ILogger log)
+        {
+            log.LogInformation($"CallWebhook executed at: {DateTime.Now}");
+
+            await _webhookService.CallWebhook();
+
+            log.LogInformation($"CallWebhook execution finished at: {DateTime.Now}");
         }
 
         #endregion
