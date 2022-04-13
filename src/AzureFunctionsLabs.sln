@@ -1,27 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.BlobTrigger", "AzureFunctionsLabs.BlobTrigger\AzureFunctionsLabs.BlobTrigger.csproj", "{E5045222-9A81-4340-AB17-FD598D6EA233}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.CosmosDBTrigger", "AzureFunctionsLabs.CosmosDBTrigger\AzureFunctionsLabs.CosmosDBTrigger.csproj", "{AEECF97C-1426-45A2-BB34-476153EA5532}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.EventHubTrigger", "AzureFunctionsLabs.EventHubTrigger\AzureFunctionsLabs.EventHubTrigger.csproj", "{6C66FD7C-B1D5-4A1A-8131-9ADDCB63CCED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.EventHubTrigger", "AzureFunctionsLabs.EventHubTrigger\AzureFunctionsLabs.EventHubTrigger.csproj", "{6C66FD7C-B1D5-4A1A-8131-9ADDCB63CCED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.EventGridTrigger", "AzureFunctionsLabs.EventGridTrigger\AzureFunctionsLabs.EventGridTrigger.csproj", "{4A985F83-FC88-413B-8B06-60BF4B10CA17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.EventGridTrigger", "AzureFunctionsLabs.EventGridTrigger\AzureFunctionsLabs.EventGridTrigger.csproj", "{4A985F83-FC88-413B-8B06-60BF4B10CA17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.HTTPTrigger", "AzureFunctionsLabs.HTTPTrigger\AzureFunctionsLabs.HTTPTrigger.csproj", "{ECCE3478-D056-4CBF-8FA4-1255C99A9394}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.HTTPTrigger", "AzureFunctionsLabs.HTTPTrigger\AzureFunctionsLabs.HTTPTrigger.csproj", "{ECCE3478-D056-4CBF-8FA4-1255C99A9394}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.IoTHubTrigger", "AzureFunctionsLabs.IoTHubTrigger\AzureFunctionsLabs.IoTHubTrigger.csproj", "{30EF1C0F-9EAD-4E0B-92E6-0B3A1AA13802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.IoTHubTrigger", "AzureFunctionsLabs.IoTHubTrigger\AzureFunctionsLabs.IoTHubTrigger.csproj", "{30EF1C0F-9EAD-4E0B-92E6-0B3A1AA13802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.QueueTrigger", "AzureFunctionsLabs.QueueTrigger\AzureFunctionsLabs.QueueTrigger.csproj", "{EDD5A27C-EAA4-4543-82DC-CAE4853ABCBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.QueueTrigger", "AzureFunctionsLabs.QueueTrigger\AzureFunctionsLabs.QueueTrigger.csproj", "{EDD5A27C-EAA4-4543-82DC-CAE4853ABCBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.ServiceBusQueueTrigger", "AzureFunctionsLabs.ServiceBusQueueTrigger\AzureFunctionsLabs.ServiceBusQueueTrigger.csproj", "{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.ServiceBusQueueTrigger", "AzureFunctionsLabs.ServiceBusQueueTrigger\AzureFunctionsLabs.ServiceBusQueueTrigger.csproj", "{BD52155A-98D8-4C33-B8A0-EA8A0A9530B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.ServiceBusTopicTrigger", "AzureFunctionsLabs.ServiceBusTopicTrigger\AzureFunctionsLabs.ServiceBusTopicTrigger.csproj", "{820F39FD-9FA9-43D5-90F1-EEFDC34E5B58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.ServiceBusTopicTrigger", "AzureFunctionsLabs.ServiceBusTopicTrigger\AzureFunctionsLabs.ServiceBusTopicTrigger.csproj", "{820F39FD-9FA9-43D5-90F1-EEFDC34E5B58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.TimerTrigger", "AzureFunctionsLabs.TimerTrigger\AzureFunctionsLabs.TimerTrigger.csproj", "{DB0FB4D3-2842-4CBE-9248-4F17CE010499}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsLabs.TimerTrigger", "AzureFunctionsLabs.TimerTrigger\AzureFunctionsLabs.TimerTrigger.csproj", "{DB0FB4D3-2842-4CBE-9248-4F17CE010499}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intergrations", "Intergrations", "{F6FC12BE-B610-49EB-8785-121AAD2E521E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.AzureAppConfiguration", "AzureFunctionsLabs.AzureAppConfiguration\AzureFunctionsLabs.AzureAppConfiguration.csproj", "{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,9 +73,16 @@ Global
 		{DB0FB4D3-2842-4CBE-9248-4F17CE010499}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB0FB4D3-2842-4CBE-9248-4F17CE010499}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB0FB4D3-2842-4CBE-9248-4F17CE010499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384} = {F6FC12BE-B610-49EB-8785-121AAD2E521E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65DA0A86-ABC3-4EF7-AFF1-D6C617EBDD4B}
