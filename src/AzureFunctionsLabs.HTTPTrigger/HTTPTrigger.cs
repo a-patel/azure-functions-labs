@@ -64,6 +64,28 @@ namespace AzureFunctionsLabs.HTTPTrigger
             return new BadRequestObjectResult("Cloudflare rejected clear-cache request");
         }
 
+
+        [FunctionName("HandleStripeWebhook")]
+        public async Task<IActionResult> HandleStripeWebhook(
+            [HttpTrigger(AuthorizationLevel.Function, "post", "get", Route = null)] HttpRequest req, ILogger log)
+        {
+            // read stripe signature form header
+            var stripeSignature = req.Headers["Stripe-Signature"];
+
+            // read stripe event data
+            var jsonData = await new StreamReader(req.Body).ReadToEndAsync();
+
+
+            var result = await _webhookService.HandleStripeWebhook(jsonData, stripeSignature);
+
+            if (result)
+            {
+                return new OkObjectResult("Handled successfully");
+            }
+
+            return new BadRequestObjectResult("Failed to handle");
+        }
+
         #endregion
 
         #region Utilities
