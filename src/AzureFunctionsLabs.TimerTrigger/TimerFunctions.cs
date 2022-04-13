@@ -88,6 +88,6 @@ namespace AzureFunctionsLabs.TimerTrigger
 #region @@Reference
 /*
 https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer
- 
+https://patrickgoode.com/how-to-configure-azure-functions-timer-schedule-through-app-settings/ 
 */
 #endregion

@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intergrations", "Intergrati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.AzureAppConfiguration", "AzureFunctionsLabs.AzureAppConfiguration\AzureFunctionsLabs.AzureAppConfiguration.csproj", "{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsLabs.FTP", "AzureFunctionsLabs.FTP\AzureFunctionsLabs.FTP.csproj", "{3EEC60E3-468C-4CE4-A7A6-32766F0094DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,12 +79,17 @@ Global
 		{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEC60E3-468C-4CE4-A7A6-32766F0094DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEC60E3-468C-4CE4-A7A6-32766F0094DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEC60E3-468C-4CE4-A7A6-32766F0094DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEC60E3-468C-4CE4-A7A6-32766F0094DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3ECBD9E8-B5EF-4ECF-8B40-A1FCC69AB384} = {F6FC12BE-B610-49EB-8785-121AAD2E521E}
+		{3EEC60E3-468C-4CE4-A7A6-32766F0094DD} = {F6FC12BE-B610-49EB-8785-121AAD2E521E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65DA0A86-ABC3-4EF7-AFF1-D6C617EBDD4B}
