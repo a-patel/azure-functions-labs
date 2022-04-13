@@ -1,11 +1,11 @@
+using Azure.Messaging.EventHubs;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Azure.EventHubs;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Extensions.Logging;
 
 namespace AzureFunctionsLabs.EventHubTrigger
 {
@@ -20,7 +20,8 @@ namespace AzureFunctionsLabs.EventHubTrigger
             {
                 try
                 {
-                    string messageBody = Encoding.UTF8.GetString(eventData.Body.Array, eventData.Body.Offset, eventData.Body.Count);
+                    string messageBody = Encoding.UTF8.GetString(eventData.Body.ToArray());
+                    //string messageBody = Encoding.UTF8.GetString(eventData.Body.ToArray(), eventData.Body.Offset, eventData.Body.Count);
 
                     // Replace these two lines with your processing logic.
                     log.LogInformation($"C# Event Hub trigger function processed a message: {messageBody}");
