@@ -6,5 +6,6 @@ namespace AzureFunctionsLabs.HTTPTrigger.Services
 {
     public interface IWebhookService
     {
+        Task<bool> ClearCloudflareCache();
     }
 }

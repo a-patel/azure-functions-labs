@@ -32,7 +32,7 @@ namespace AzureFunctionsLabs.HTTPTrigger
         #region Functions
 
         [FunctionName("HTTPTrigger")]
-        public static async Task<IActionResult> Run(
+        public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
@@ -47,6 +47,21 @@ namespace AzureFunctionsLabs.HTTPTrigger
             return name != null
                 ? (ActionResult)new OkObjectResult($"Hello, {name}")
                 : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
+        }
+
+
+        [FunctionName("ClearCloudflareCache")]
+        public async Task<IActionResult> ClearCloudflareCache(
+            [HttpTrigger(AuthorizationLevel.Function, "post", "get", Route = null)] HttpRequest req, ILogger log)
+        {
+            var result = await _webhookService.ClearCloudflareCache();
+
+            if (result)
+            {
+                return new OkObjectResult("Cloudflare CDN Cleared");
+            }
+
+            return new BadRequestObjectResult("Cloudflare rejected clear-cache request");
         }
 
         #endregion
