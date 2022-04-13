@@ -10,7 +10,7 @@ namespace AzureFunctionsLabs.EventGridTrigger
     public static class Function1
     {
         [FunctionName("Function1")]
-        public static void Run([EventGridTrigger]EventGridEvent eventGridEvent, ILogger log)
+        public static void Run([EventGridTrigger] EventGridEvent eventGridEvent, ILogger log)
         {
             log.LogInformation(eventGridEvent.Data.ToString());
         }

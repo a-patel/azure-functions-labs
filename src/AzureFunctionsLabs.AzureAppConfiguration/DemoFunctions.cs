@@ -4,7 +4,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
 #endregion
 
 namespace AzureFunctionsLabs.AzureAppConfiguration

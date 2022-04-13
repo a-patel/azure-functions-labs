@@ -34,31 +34,45 @@ namespace AzureFunctionsLabs.TimerTrigger
         #region Functions
 
         [FunctionName("TimerTrigger")]
-        public void Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, ILogger log)
+        public void Run([TimerTrigger("0 */5 * * * *")] TimerInfo timerInfo, ILogger logger)
         {
-            log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+            logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+
+            logger.LogInformation($"Next timer schedule = {timerInfo.ScheduleStatus.Next}");
         }
 
 
         [FunctionName("RemoveLogs")]
-        public async Task RemoveLogs([TimerTrigger(REMOVELOGS_SCHEDULE)]TimerInfo myTimer, ILogger log)
+        public async Task RemoveLogs([TimerTrigger(REMOVELOGS_SCHEDULE)] TimerInfo timerInfo, ILogger logger)
         {
-            log.LogInformation($"Deleted logs executed at: {DateTime.Now}");
+            logger.LogInformation($"Last timer scheduled = {timerInfo.ScheduleStatus.Last}");
+
+
+            logger.LogInformation($"Deleted logs executed at: {DateTime.Now}");
 
             await _backgroundJobService.RemoveLogs();
 
-            log.LogInformation($"Deleted logs execution finished at: {DateTime.Now}");
+            logger.LogInformation($"Deleted logs execution finished at: {DateTime.Now}");
+
+
+            logger.LogInformation($"Next timer schedule = {timerInfo.ScheduleStatus.Next}");
         }
 
 
         [FunctionName("CallWebhook")]
-        public async Task CallWebhook([TimerTrigger(WEBHOOK_SCHEDULE)]TimerInfo myTimer, ILogger log)
+        public async Task CallWebhook([TimerTrigger(WEBHOOK_SCHEDULE)] TimerInfo timerInfo, ILogger logger)
         {
-            log.LogInformation($"CallWebhook executed at: {DateTime.Now}");
+            logger.LogInformation($"Last timer scheduled = {timerInfo.ScheduleStatus.Last}");
+
+
+            logger.LogInformation($"CallWebhook executed at: {DateTime.Now}");
 
             await _webhookService.CallWebhook();
 
-            log.LogInformation($"CallWebhook execution finished at: {DateTime.Now}");
+            logger.LogInformation($"CallWebhook execution finished at: {DateTime.Now}");
+
+
+            logger.LogInformation($"Next timer schedule = {timerInfo.ScheduleStatus.Next}");
         }
 
         #endregion
@@ -73,7 +87,7 @@ namespace AzureFunctionsLabs.TimerTrigger
 
 #region @@Reference
 /*
-
+https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer
  
 */
 #endregion

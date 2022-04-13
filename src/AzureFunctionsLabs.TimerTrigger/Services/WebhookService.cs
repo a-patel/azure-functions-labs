@@ -1,7 +1,6 @@
 ﻿#region Imports
 using Microsoft.Extensions.Logging;
 using System;
-using System.Data.SqlClient;
 using System.Net.Http;
 using System.Threading.Tasks;
 
